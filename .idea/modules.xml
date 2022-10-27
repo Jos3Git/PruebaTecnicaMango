@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/01.MANGO.iml" filepath="$PROJECT_DIR$/.idea/01.MANGO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeReview/CodeReview.iml" filepath="$PROJECT_DIR$/CodeReview/CodeReview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mango/Mango.iml" filepath="$PROJECT_DIR$/Mango/Mango.iml" />
+    </modules>
+  </component>
+</project>

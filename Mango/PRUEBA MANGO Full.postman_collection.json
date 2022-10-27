@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "c8cbca7b-2c23-4b93-a661-c1857450fa7b",
+		"name": "PRUEBA MANGO Full",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\": 1,\r\n    \"name\": \"nombre de prueba 2\",\r\n    \"lastName\": \"lastname de prueba\",\r\n    \"address\": \"address test\",\r\n    \"city\": \"city test\",\r\n    \"email\": \"email test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll Slogan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/slogans",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"slogans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findbyId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nombre de prueba 2\",\r\n    \"lastName\": \"lastname de prueba\",\r\n    \"address\":\"address test\",\r\n    \"city\":\"city test\",\r\n    \"email\":\"email test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Slogan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sloganText\":\"slogan de prueba\",\r\n    \"user\":{\r\n        \"id\":1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/campaings/slogan",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campaings",
+						"slogan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"nombre de prueba modific\",\r\n        \"lastName\": \"lastname de prueba\",\r\n        \"address\": \"address test\",\r\n        \"city\": \"city test\",\r\n        \"email\": \"email test\",\r\n        \"slogans\": []\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Slogan",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"sloganDetail\": \"slogan de prueba mod\",\r\n        \"dateCreated\": \"2022-09-15T12:00:00\",\r\n        \"dateUpdated\": \"2022-09-15T12:00:00\",\r\n        \"user\":{\r\n            \"id\":1\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/slogans",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"slogans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Language",
+						"value": "en-UK",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"nombre de prueba cambiado\",\r\n    \"lastName\": \"lastname de prueba\",\r\n    \"birthDate\": \"1984-09-22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
